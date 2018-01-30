@@ -1,4 +1,22 @@
 add_llvm_library(LLVMAnalysis
+  AliasAnalysisCounter.cpp
+  AliasDebugger.cpp
+  DIBuilder.cpp
+  DbgInfoPrinter.cpp
+  DebugInfo.cpp
+  LibCallAliasAnalysis.cpp
+  LibCallSemantics.cpp
+  LoopDependenceAnalysis.cpp
+  NoAliasAnalysis.cpp
+  PathNumbering.cpp
+  PathProfileInfo.cpp
+  PathProfileVerifier.cpp
+  ProfileEstimatorPass.cpp
+  ProfileInfo.cpp
+  ProfileInfoLoader.cpp
+  ProfileInfoLoaderPass.cpp
+  ProfileVerifierPass.cpp
+  SparsePropagation.cpp
   AliasAnalysis.cpp
   AliasAnalysisEvaluator.cpp
   AliasAnalysisSummary.cpp

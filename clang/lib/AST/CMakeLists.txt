@@ -4,6 +4,9 @@ set(LLVM_LINK_COMPONENTS
   )
 
 add_clang_library(clangAST
+  DumpXML.cpp
+  LambdaMangleContext.cpp
+  StmtDumper.cpp
   APValue.cpp
   ASTConsumer.cpp
   ASTContext.cpp

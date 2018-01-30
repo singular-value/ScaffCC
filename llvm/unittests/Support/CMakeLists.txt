@@ -3,6 +3,13 @@ set(LLVM_LINK_COMPONENTS
   )
 
 add_llvm_unittest(SupportTests
+  ConstantRangeTest.cpp
+  IRBuilderTest.cpp
+  LeakDetectorTest.cpp
+  MDBuilderTest.cpp
+  TimeValue.cpp
+  TypeBuilderTest.cpp
+  ValueHandleTest.cpp
   AlignOfTest.cpp
   AllocatorTest.cpp
   ARMAttributeParser.cpp

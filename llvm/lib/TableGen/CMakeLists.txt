@@ -1,4 +1,5 @@
 add_llvm_library(LLVMTableGen
+  TableGenAction.cpp
   Error.cpp
   Main.cpp
   Record.cpp

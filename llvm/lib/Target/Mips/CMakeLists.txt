@@ -14,6 +14,11 @@ tablegen(LLVM MipsGenMCPseudoLowering.inc -gen-pseudo-lowering)
 add_public_tablegen_target(MipsCommonTableGen)
 
 add_llvm_target(MipsCodeGen
+  MipsCodeEmitter.cpp
+  MipsEmitGPRestore.cpp
+  MipsExpandPseudo.cpp
+  MipsJITInfo.cpp
+  MipsSelectionDAGInfo.cpp
   Mips16FrameLowering.cpp
   Mips16HardFloat.cpp
   Mips16HardFloatInfo.cpp

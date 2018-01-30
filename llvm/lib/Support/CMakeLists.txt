@@ -30,6 +30,20 @@ elseif( CMAKE_HOST_UNIX )
 endif( MSVC OR MINGW )
 
 add_llvm_library(LLVMSupport
+  ConstantRange.cpp
+  DataStream.cpp
+  Disassembler.cpp
+  Dwarf.cpp
+  IncludeFile.cpp
+  IntrusiveRefCntPtr.cpp
+  IsInf.cpp
+  IsNAN.cpp
+  MemoryObject.cpp
+  PathV2.cpp
+  SearchForAddressOfSpecialSymbol.cpp
+  StreamableMemoryObject.cpp
+  TimeValue.cpp
+  system_error.cpp
   AMDGPUMetadata.cpp
   APFloat.cpp
   APInt.cpp

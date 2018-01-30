@@ -10,6 +10,8 @@ set(LLVM_LINK_COMPONENTS
   )
 
 set(SOURCES
+  LTOCodeGenerator.cpp
+  LTOModule.cpp
   LTODisassembler.cpp
   lto.cpp
   )

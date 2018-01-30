@@ -1,4 +1,5 @@
 add_llvm_library(LLVMObject
+  MachOObject.cpp
   Archive.cpp
   ArchiveWriter.cpp
   Binary.cpp

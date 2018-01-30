@@ -1,4 +1,10 @@
 add_llvm_library(LLVMScalarOpts
+  BasicBlockPlacement.cpp
+  CodeGenPrepare.cpp
+  GlobalMerge.cpp
+  ObjCARC.cpp
+  ScalarReplAggregates.cpp
+  SimplifyLibCalls.cpp
   ADCE.cpp
   AlignmentFromAssumptions.cpp
   BDCE.cpp

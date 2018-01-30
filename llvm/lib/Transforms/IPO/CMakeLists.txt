@@ -1,6 +1,7 @@
 add_definitions("-g")
 
 add_llvm_library(LLVMipo
+  InlineAlways.cpp
   AlwaysInliner.cpp
   ArgumentPromotion.cpp
   BarrierNoopPass.cpp

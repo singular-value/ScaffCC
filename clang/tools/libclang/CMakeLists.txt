@@ -1,4 +1,8 @@
 set(SOURCES
+  IndexBody.cpp
+  IndexDecl.cpp
+  IndexTypeSourceInfo.cpp
+  IndexingContext.cpp
   ARCMigrate.cpp
   BuildSystem.cpp
   CIndex.cpp

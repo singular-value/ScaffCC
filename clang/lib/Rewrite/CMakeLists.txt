@@ -3,6 +3,13 @@ set(LLVM_LINK_COMPONENTS
   )
 
 add_clang_library(clangRewrite
+  FixItRewriter.cpp
+  FrontendActions.cpp
+  HTMLPrint.cpp
+  RewriteMacros.cpp
+  RewriteModernObjC.cpp
+  RewriteObjC.cpp
+  RewriteTest.cpp
   DeltaTree.cpp
   HTMLRewrite.cpp
   RewriteRope.cpp

@@ -21,6 +21,10 @@ endif()
 add_public_tablegen_target(X86CommonTableGen)
 
 set(sources
+  X86COFFMachineModuleInfo.cpp
+  X86CodeEmitter.cpp
+  X86ELFWriterInfo.cpp
+  X86JITInfo.cpp
   X86AsmPrinter.cpp
   X86CallFrameOptimization.cpp
   X86CallLowering.cpp

@@ -1,4 +1,9 @@
 add_llvm_library(LLVMMCDisassembler
+  EDDisassembler.cpp
+  EDInst.cpp
+  EDMain.cpp
+  EDOperand.cpp
+  EDToken.cpp
   Disassembler.cpp
   MCDisassembler.cpp
   MCExternalSymbolizer.cpp

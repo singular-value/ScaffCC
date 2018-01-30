@@ -8,6 +8,7 @@ if (MSVC)
 endif()
 
 add_clang_library(clangSema
+  TargetAttributesSema.cpp
   AnalysisBasedWarnings.cpp
   AttributeList.cpp
   CodeCompleteConsumer.cpp

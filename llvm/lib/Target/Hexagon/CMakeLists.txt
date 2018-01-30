@@ -12,6 +12,10 @@ tablegen(LLVM HexagonGenSubtargetInfo.inc -gen-subtarget)
 add_public_tablegen_target(HexagonCommonTableGen)
 
 add_llvm_target(HexagonCodeGen
+  HexagonCallingConvLower.cpp
+  HexagonExpandPredSpillCode.cpp
+  HexagonRemoveSZExtArgs.cpp
+  HexagonSplitTFRCondSets.cpp
   BitTracker.cpp
   HexagonAsmPrinter.cpp
   HexagonBitSimplify.cpp

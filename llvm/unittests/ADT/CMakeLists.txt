@@ -3,6 +3,8 @@ set(LLVM_LINK_COMPONENTS
   )
 
 set(ADTSources
+  SmallBitVectorTest.cpp
+  ilistTest.cpp
   APFloatTest.cpp
   APIntTest.cpp
   APSIntTest.cpp

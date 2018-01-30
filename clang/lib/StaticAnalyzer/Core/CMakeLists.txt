@@ -8,6 +8,9 @@ else()
 endif()
 
 add_clang_library(clangStaticAnalyzerCore
+  BasicConstraintManager.cpp
+  ObjCMessage.cpp
+  TextPathDiagnostics.cpp
   APSIntType.cpp
   AnalysisManager.cpp
   AnalyzerOptions.cpp

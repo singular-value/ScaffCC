@@ -1,6 +1,10 @@
 set(LLVM_LINK_COMPONENTS Support)
 
 add_tablegen(llvm-tblgen LLVM
+  EDEmitter.cpp
+  SetTheory.cpp
+  StringMatcher.cpp
+  TGValueTypes.cpp
   AsmMatcherEmitter.cpp
   AsmWriterEmitter.cpp
   AsmWriterInst.cpp

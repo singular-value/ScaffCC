@@ -1,4 +1,5 @@
 add_llvm_library(LLVMRuntimeDyld
+  GDBRegistrar.cpp
   JITSymbol.cpp
   RTDyldMemoryManager.cpp
   RuntimeDyld.cpp

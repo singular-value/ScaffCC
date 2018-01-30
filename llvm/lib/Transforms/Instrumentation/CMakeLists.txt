@@ -1,4 +1,9 @@
 add_llvm_library(LLVMInstrumentation
+  EdgeProfiling.cpp
+  FunctionBlackList.cpp
+  OptimalEdgeProfiling.cpp
+  PathProfiling.cpp
+  ProfilingUtils.cpp
   AddressSanitizer.cpp
   BoundsChecking.cpp
   DataFlowSanitizer.cpp

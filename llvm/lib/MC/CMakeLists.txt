@@ -1,4 +1,12 @@
 add_llvm_library(LLVMMC
+  MCAtom.cpp
+  MCCodeGenInfo.cpp
+  MCDisassembler.cpp
+  MCELF.cpp
+  MCModule.cpp
+  MCPureStreamer.cpp
+  MCTargetAsmLexer.cpp
+  WinCOFFStreamer.cpp
   ConstantPools.cpp
   ELFObjectWriter.cpp
   MCAsmBackend.cpp

@@ -34,6 +34,7 @@ if (CLANG_BUILT_STANDALONE)
 endif()
 
 add_clang_library(clangCodeGen
+  CGRTTI.cpp
   BackendUtil.cpp
   CGAtomic.cpp
   CGBlocks.cpp

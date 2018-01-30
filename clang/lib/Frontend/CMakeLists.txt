@@ -13,6 +13,7 @@ if (CLANG_BUILT_STANDALONE)
 endif()
 
 add_clang_library(clangFrontend
+  Warnings.cpp
   ASTConsumers.cpp
   ASTMerge.cpp
   ASTUnit.cpp

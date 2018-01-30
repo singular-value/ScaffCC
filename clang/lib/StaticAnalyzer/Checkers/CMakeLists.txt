@@ -3,6 +3,12 @@ set(LLVM_LINK_COMPONENTS
   )
 
 add_clang_library(clangStaticAnalyzerCheckers
+  AdjustedReturnValueChecker.cpp
+  AttrNonNullChecker.cpp
+  CommonBugCategories.cpp
+  IdempotentOperationChecker.cpp
+  IteratorsChecker.cpp
+  OSAtomicChecker.cpp
   AllocationDiagnostics.cpp
   AnalysisOrderChecker.cpp
   AnalyzerStatsChecker.cpp

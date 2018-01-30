@@ -3,6 +3,14 @@ list(APPEND LLVM_COMMON_DEPENDS intrinsics_gen)
 list(APPEND LLVM_TABLEGEN_FLAGS -I ${LLVM_MAIN_SRC_DIR}/lib/Target)
 
 add_llvm_library(LLVMTarget
+  Mangler.cpp
+  TargetData.cpp
+  TargetELFWriterInfo.cpp
+  TargetInstrInfo.cpp
+  TargetJITInfo.cpp
+  TargetLibraryInfo.cpp
+  TargetRegisterInfo.cpp
+  TargetSubtargetInfo.cpp
   Target.cpp
   TargetIntrinsicInfo.cpp
   TargetLoweringObjectFile.cpp

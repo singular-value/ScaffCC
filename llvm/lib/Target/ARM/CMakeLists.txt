@@ -17,6 +17,11 @@ tablegen(LLVM ARMGenSystemRegister.inc -gen-searchable-tables)
 add_public_tablegen_target(ARMCommonTableGen)
 
 add_llvm_target(ARMCodeGen
+  ARMCodeEmitter.cpp
+  ARMELFWriterInfo.cpp
+  ARMJITInfo.cpp
+  Thumb1RegisterInfo.cpp
+  Thumb2RegisterInfo.cpp
   A15SDOptimizer.cpp
   ARMAsmPrinter.cpp
   ARMBaseInstrInfo.cpp

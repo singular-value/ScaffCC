@@ -1,4 +1,7 @@
 add_llvm_library(LLVMTransformUtils
+  AddrModeMatcher.cpp
+  CmpInstAnalysis.cpp
+  LowerExpectIntrinsic.cpp
   ASanStackFrameLayout.cpp
   AddDiscriminators.cpp
   BasicBlockUtils.cpp

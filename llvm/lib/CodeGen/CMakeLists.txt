@@ -1,4 +1,17 @@
 add_llvm_library(LLVMCodeGen
+  CodePlacementOpt.cpp
+  JITCodeEmitter.cpp
+  MachineCodeEmitter.cpp
+  MachineFunctionAnalysis.cpp
+  MachineLoopRanges.cpp
+  OcamlGC.cpp
+  Passes.cpp
+  RenderMachineFunction.cpp
+  ShadowStackGC.cpp
+  ShrinkWrapping.cpp
+  Spiller.cpp
+  StrongPHIElimination.cpp
+  TargetInstrInfoImpl.cpp
   AggressiveAntiDepBreaker.cpp
   AllocationOrder.cpp
   Analysis.cpp

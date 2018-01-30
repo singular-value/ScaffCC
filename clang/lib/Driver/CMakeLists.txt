@@ -10,6 +10,15 @@ if(WIN32)
 endif()
 
 add_clang_library(clangDriver
+  Arg.cpp
+  ArgList.cpp
+  CC1AsOptions.cpp
+  CC1Options.cpp
+  OptTable.cpp
+  Option.cpp
+  ToolChains.cpp
+  Tools.cpp
+  WindowsToolChain.cpp
   Action.cpp
   Compilation.cpp
   Distro.cpp

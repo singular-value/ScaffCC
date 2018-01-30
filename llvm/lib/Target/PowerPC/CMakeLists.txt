@@ -13,6 +13,9 @@ tablegen(LLVM PPCGenSubtargetInfo.inc -gen-subtarget)
 add_public_tablegen_target(PowerPCCommonTableGen)
 
 add_llvm_target(PowerPCCodeGen
+  PPCCodeEmitter.cpp
+  PPCJITInfo.cpp
+  PPCSelectionDAGInfo.cpp
   PPCBoolRetToInt.cpp
   PPCAsmPrinter.cpp
   PPCBranchSelector.cpp
