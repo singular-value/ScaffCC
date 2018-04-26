@@ -1,0 +1,53 @@
+double theta0 = 1.0, theta1 = 1.0, theta2 = 1.0;
+double omega0 = 1.0, omega1 = 1.0, omega2 = 1.0;
+
+
+module controlledRz(qbit target, qbit control, double theta) {
+  Rz(target, -1 * theta / 2.0);
+  CNOT(target, control);
+  Rz(target, theta / 2.0);
+  CNOT(target, control);
+}
+
+
+module controlledRy(qbit target, qbit control, double theta) {
+  CNOT(target, control);
+  Ry(target, -1 * theta / 2.0);
+  CNOT(target, control);
+  Ry(target, theta / 2.0);
+}
+
+
+module swap(qbit q1, qbit q2) {
+  CNOT(q1, q2);
+  CNOT(q2, q1);
+  CNOT(q1, q2);
+}
+
+
+module prepareAnsatz(qbit reg[2]) {
+  Ry(reg[0], theta0);
+  Rz(reg[0], omega0);
+
+  X(reg[0]);
+  controlledRy(reg[1], reg[0], theta1);
+  controlledRz(reg[1], reg[0], omega1);
+  X(reg[0]);
+
+  controlledRy(reg[1], reg[0], theta2);
+  controlledRz(reg[1], reg[0], omega2);
+}
+
+
+int main() {
+  qbit reg[2];
+  prepareAnsatz(reg);
+
+  // measure ZX
+  H(reg[1]);
+  CNOT(reg[0], reg[1]);
+  MeasZ(reg[0]);
+  MeasZ(reg[1]);
+
+  return 0;
+}
